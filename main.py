@@ -376,23 +376,23 @@ response = ''
 commandcheck = 0
 while response != 'exit':
 	response = input('Plese type your command: ')
-	response = response.split()
+	response_list = response.split()
 
-	if 'location' in response:
+	if 'location' in response_list:
 		location = input('Type the location: ')
-		if 'current' in response:
+		if 'current' in response_list:
 			weather_table_info(location)
-		if 'past' in response:
+		if 'past' in response_list:
 			weather_trend_info(location)
 
-	if 'temperature'  in response:
+	if 'temperature'  in response_list:
 		temp_summary()
 
-	if 'visibility' in response:
+	if 'visibility' in response_list:
 		other_summary('Visibility')
-	if 'humidity' in response:
+	if 'humidity' in response_list:
 		other_summary('Humidity')
-	if 'windspeed' in response:
+	if 'windspeed' in response_list:
 		other_summary('Windspeed')
 
 
