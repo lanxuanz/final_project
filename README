@@ -1,0 +1,60 @@
+Instructions:
+
+------------------
+Required packages:
+------------------
+
+- pandas
+- requests
+- BeautifulSoup
+- time
+- json
+- db
+- sqlite3
+- plotly
+- plotly.graph_objs
+- tabulate 
+- datetime
+- matplotlib.pyplot
+- numpy
+- plotly.express
+
+
+----------------
+How to interact:
+----------------
+In this program, users can see the weather information for one specific location in WA.
+Users can also see the summary of the state weather infromation like temperature/humidity/wind speed/visibility
+
+Check the current weather of one location:
+	- Command: location current
+	- Note: Need to type the location later
+	- Result: a table
+
+Check the past weather change within 24 hours of one location:
+	- Command: location past
+	- Note: Need to type the location later
+	- Result: a scatter plot with three lines 
+		> Real temperature for last five time unit
+		> Highest temperature of the day
+		> Lowest temperature of the day
+
+Check the Temperature:
+	- Command: temperature
+	- Result: a bar plot
+
+Check the Visibility:
+	- Command: visibility
+	- Result: a plotly bar plot
+
+Check the Wind Speed:
+	- Command: windspeed
+	- Result: a plotly boxplot
+
+Check the Humidity:
+	- Command: humidity
+	- Result: a plotly boxplot
+
+
+Note: commands can be combined together
+
